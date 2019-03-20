@@ -5,16 +5,16 @@ $(function(){
         
     });
     $('.first').on('click',function(){
-        window.location.href = 'file:///C:/Users/Mateusz/Desktop/adwokacko-radcowska.pl/about-as/index.html'
+        window.location.href = '../about-as/index.html'
     });
     $('.second').on('click',function(){
-        window.location.href = 'file:///C:/Users/Mateusz/Desktop/adwokacko-radcowska.pl/individual-clients/index.html'
+        window.location.href = '../individual-clients/index.html'
     });
     $('.third').on('click',function(){
-        window.location.href = 'file:///C:/Users/Mateusz/Desktop/adwokacko-radcowska.pl/bussines-client/index.html'
+        window.location.href = '../bussines-client/index.html'
     });
     $('.four').on('click',function(){
-        window.location.href = 'file:///C:/Users/Mateusz/Desktop/adwokacko-radcowska.pl/government%20-units/index.html'
+        window.location.href = '../government%20-units/index.html'
     });
 
     $('nav').find('a').on('mouseover', function(){
@@ -33,7 +33,20 @@ $(function(){
 //     })
 //    }
    
-  
-   
+// $('#carouselSlides').on('mouseover', function(){
+//     $('.fonts').css('color', 'grey');
+//     $('.fonts').css('fontSize', '17px');
+//     $('.fonts').css('fontWeight', 'bold');
+// });
+// $('#carouselSlides').on('mouseout', function(){
+//     $('.fonts').css('color', 'white');
+//     $('.fonts').css('fontSize', '16px');
+//     $('.fonts').css('fontWeight', 'bold');
+// });
+   $('.dropdown').on('click', function(){
+       $('.offert').toggle('slow');
+    //    $('.offert').css('display', 'inline-block');       
+       $('.listAbout').toggle('slow');
+   })
     
 });
