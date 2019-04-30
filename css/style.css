@@ -15,16 +15,21 @@ body{
     /* margin-top: 20px; */
 }
 .small-box{
-    /* border: 1px solid black; */
     height: 413px;
     margin-top: 20px;
     margin-right:10px;
-    /* margin-bottom: 20px; */
 }
 @media only screen and (max-width: 450px){
     .small-box{
         margin-right: 0px !important;
     }
+    .small-box > *{
+        text-align: center;
+        margin-top: 2%;
+    }
+}
+
+@media only screen and (max-width: 770px){
     .small-box > *{
         text-align: center;
         margin-top: 2%;
@@ -38,19 +43,14 @@ body{
     /* margin-top: 40px; */
 }
 .first{
-    /* background-color: #7EC14A;
-     */
      background-image: url('../images/opacity-team.png');
      background-size: cover;
 }
 .second{
-    /* background-color: lightblue; */
-    /* margin-top: 100px; */
     background-image: url('../images/individ-opacity.png');
     background-size: cover;
 }
 .third{
-    /* background-color: lightgray; */
     background-image: url('../images/opacity-adult.png');
     background-size: cover;
 
@@ -66,11 +66,6 @@ body{
     
 }
 
-/* .foot-box{
-    width:100%;
-    height: auto;
-} */
-
 .box-sizer{
     margin-top: 20px;
     background-color: #F8F8FF;
@@ -82,8 +77,6 @@ body{
     width: 425.5px;
     height: auto;
     text-align: center;
-
-    /* background-color: lightblue; */
 }
 @media only screen and (max-width: 450px) {
     .first-box-character > p{
@@ -93,19 +86,37 @@ body{
         content: "";
         border-bottom: 1px solid black;
         width: 100%;
-        /* height: 100px; */
         display: inline-block;
         margin-bottom: 2%;
-        /* padding: 10px; */
     }
   }
+  @media only screen and (min-width: 450px) and (max-width: 575px) {
+    .center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .first-box-character{
+        min-width: 50%;
+    }
+    .second-box-character{
+        min-width: 50%; 
+    }
+    .third-box-character{
+        min-width: 50%;    
+    }
+    .four-box-character {
+        min-width: 50%;
+
+    }
+}
 
 .second-box-character{
     display: inline-block;
     width: 425.5px;
     height: auto;
     text-align: center;
-    /* background-color: red; */
 }
 @media only screen and (max-width: 450px) {
     .second-box-character > p{
@@ -118,7 +129,6 @@ body{
         /* height: 100px; */
         display: inline-block;
         margin-bottom: 2%;
-        /* padding: 10px; */
     }
   }
 .third-box-character{
@@ -126,7 +136,6 @@ body{
     width: 425.5px;
     height: auto;
     text-align: center;
-    /* background-color: #7EC14A */
 }
 @media only screen and (max-width: 450px) {
     .third-box-character > p{
@@ -139,7 +148,6 @@ body{
         /* height: 100px; */
         display: inline-block;
         margin-bottom: 2%;
-        /* padding: 10px; */
     }
   }
 .four-box-character{
@@ -147,7 +155,6 @@ body{
     width: 425.5px;
     height: auto;
     text-align: center;
-
     /* background-color: lightcoral; */
 }
 
@@ -194,9 +201,7 @@ body{
 .navbar-toggler-icon{
     background-image:url('../images/menu.svg')
 }
-/* .nav-margin{
-    margin-left: 7em;
-} */
+
 .google-fonts{
     font-family: 'Merriweather', serif;
     font-size: 1.15rem;
@@ -206,39 +211,18 @@ body{
     margin: 0px !important;
 }
 
-/* .sizer{
-    margin-right: 10% !important;
-} */
-
-
 @media only screen and (max-width: 400px) {
     .sizer {
         font-size: 16.5px !important;
-        /* display: flex; */
-        /* align-items: center; */
-        /* display: block; */
-        /* margin-left: 20px !important; */
     }
   }
 
-
-  /* @media only screen and (max-width: 450px) {
-    .navbar-brand{
-        margin-left: 7% !important;
-    }
-  } */
   
-
   @media only screen and (max-width: 320px) {
     .sizer {
       margin-left: 0 !important;
     }
   }
-  /* @media only screen and (max-width: 400px) {
-    .nav-margin {
-        margin-left: 40%;
-    }
-  } */
 
 .small-box{
     background-position: center;    
@@ -258,12 +242,12 @@ body{
   @media only screen and (max-width: 450px) {
     .carousel-item {
         width: 100%;
-        height: 500px !important;
+        height: 450px !important;
     }
     .carousel-item > img{
         background-size: cover; 
         width: 100%;
-        height: 500px;
+        height: 450px;
     }
   }
   @media only screen and (max-width: 450px) {
@@ -272,6 +256,33 @@ body{
         align-items: center;
     }
   }
+  
+  @media only screen and (max-width: 768px) {
+    .navbar-nav{
+        display: flex;
+        align-items: center;
+    }
+  }
+  @media only screen and (min-width: 771px) and (max-width: 991px) {
+    .flex-nav{
+        display: flex;
+        width:100%;
+        justify-content: space-between;
+    }
+    .navbar-collapse {
+        display: flex;
+        text-align: end;
+        margin-right: 5px;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+      .navbar {
+          font-size: 15px;
+          text-align: center;
+      }
+  }
+
   
  /* name location in navbar */
 
@@ -286,15 +297,28 @@ body{
     
   }
 
-  
-  /* .flex-nav{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width:100%;
-  } */
+  @media only screen and (max-width: 765px){
+    .navbar-brand{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+    
+  }
 
   @media only screen and (max-width: 450px){
+    .flex-nav{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width:100%;
+    }
+  }
+
+  @media only screen and (max-width: 775px){
     .flex-nav{
         display: flex;
         align-items: center;
@@ -326,11 +350,6 @@ body{
         margin-top: 5%;
 }
 
-/* .offert-dropdown{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
 .flex-box-dropdown{
     margin-top: 1%;
     margin-bottom:1%;
@@ -338,7 +357,6 @@ body{
     flex-direction: column;
     align-items: center;
     font-weight: bold;
-    /* justify-content: center; */
 }
 .dropdown{
     width: 150px;
@@ -361,9 +379,7 @@ body{
 .listAbout{
     display: none;
 }
-/* .list-About > * {
-    width: 200px;
-} */
+
 .fonts {
     font-weight: 700;
 }
@@ -371,14 +387,7 @@ body{
 /* bussines client */
 
 @media only screen and (max-width: 450px) {
-    /* .carousel-item {
-        width: 100%;
-        height: 500px !important;
-    } */
     .bussines > img{
-        /* background-size: cover; 
-        width: 100%;
-        height: 500px; */
         margin-top: 10%;
     }
   }
